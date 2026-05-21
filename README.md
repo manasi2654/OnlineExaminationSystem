@@ -35,7 +35,6 @@ The Online Examination System is a web-based application developed using the Dja
 - Django Framework
 - HTML5
 - CSS3
-- Bootstrap
 - SQLite Database
 
 ---
@@ -57,11 +56,17 @@ Installation Guide
 Step 1: Clone the Repository
 git clone <repository-url>
 cd Online-Examination-System
+
+
 Step 2: Install Required Packages
 pip install -r requirements.txt
+
+
 Step 3: Make Database Migrations
 python manage.py makemigrations
 python manage.py migrate
+
+
 Step 4: Create Admin/Superuser
 python manage.py createsuperuser
 
@@ -103,21 +108,4 @@ Student Dashboard
 Online Examination Page
 Result Page
 
-(Add screenshots here if available)
 
-Future Enhancements
-Live Proctoring System
-AI-Based Cheating Detection
-Subjective Answer Evaluation
-Email Notifications
-Performance Analytics Dashboard
-Instructions
-Install the Requirements:
-pip install -r requirements.txt
-Make Database Migrations:
-python manage.py makemigrations
-python manage.py migrate
-Run the Application:
-python manage.py runserver
-Create Admin Account:
-python manage.py createsuperuser
