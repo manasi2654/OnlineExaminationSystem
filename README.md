@@ -1,4 +1,4 @@
-````markdown id="u5f5qc"
+
 # 🚀 Online Examination System using Django Framework
 
 ## 📌 Project Overview
