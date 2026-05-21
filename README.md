@@ -52,6 +52,13 @@ Online-Examination-System/
 ├── requirements.txt
 └── README.md
 
+# Screenshots
+
+## Home Page
+
+![Home Page](Screenshots/homepage.png)
+
+
 Installation Guide
 Step 1: Clone the Repository
 git clone <repository-url>
