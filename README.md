@@ -1,3 +1,4 @@
+````markdown
 # Online Examination System using Django Framework
 
 The Online Examination System is a web-based application developed using the Django framework. This system helps automate the examination process by allowing administrators to manage exams, students, questions, and results efficiently. Students can log in, attend exams online, and view their results instantly.
@@ -35,6 +36,7 @@ The Online Examination System is a web-based application developed using the Dja
 - Django Framework
 - HTML5
 - CSS3
+- Bootstrap
 - SQLite Database
 
 ---
@@ -45,74 +47,110 @@ The Online Examination System is a web-based application developed using the Dja
 Online-Examination-System/
 │
 ├── exam/
+├── student/
+├── teacher/
 ├── templates/
 ├── static/
+├── screenshots/
 ├── db.sqlite3
 ├── manage.py
 ├── requirements.txt
 └── README.md
+```
+
+---
 
 # Screenshots
 
 ## Home Page
 
-![Home Page](https://github.com/manasi2654/OnlineExaminationSystem/blob/main/Screenshots/homepage.png)
+![Home Page](screenshots/homepage.png)
 
+## Admin Dashboard
 
-Installation Guide
-Step 1: Clone the Repository
-git clone <repository-url>
-cd Online-Examination-System
+![Admin Dashboard](screenshots/admin-dashboard.png)
 
+## Student Dashboard
 
-Step 2: Install Required Packages
+![Student Dashboard](screenshots/student-dashboard.png)
+
+## Online Examination Page
+
+![Exam Page](screenshots/exam-page.png)
+
+## Result Page
+
+![Result Page](screenshots/result-page.png)
+
+---
+
+# Installation Guide
+
+## Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/manasi2654/OnlineExaminationSystem.git
+cd OnlineExaminationSystem
+```
+
+## Step 2: Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+## Step 3: Activate Virtual Environment
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux/Mac
+
+```bash
+source venv/bin/activate
+```
+
+## Step 4: Install Required Packages
+
+```bash
 pip install -r requirements.txt
+```
 
+## Step 5: Make Database Migrations
 
-Step 3: Make Database Migrations
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
+## Step 6: Create Admin/Superuser
 
-Step 4: Create Admin/Superuser
+```bash
 python manage.py createsuperuser
+```
 
-Enter username, email, and password to create the admin account.
+## Step 7: Run the Application
 
-Step 5: Run the Application
+```bash
 python manage.py runserver
+```
 
-Now open the browser and visit:
 
-http://127.0.0.1:8000/
-Admin Login
 
-After creating the superuser account, log in using:
+# Contact Us Page Configuration
 
-http://127.0.0.1:8000/admin
-Contact Us Page Configuration
+Update email credentials in `settings.py`:
 
-To enable the Contact Us email functionality, update your email credentials in the settings.py file.
-
-Example:
-
+```python
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'your-email@gmail.com'
 EMAIL_HOST_PASSWORD = 'your-password'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-Default Database
+```
 
-The project uses SQLite as the default database.
-
-Database file:
-
-db.sqlite3
-Screenshots
-Home Page
-Admin Dashboard
-Student Dashboard
-Online Examination Page
-Result Page
-
+---
 
