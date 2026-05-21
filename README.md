@@ -56,7 +56,7 @@ Online-Examination-System/
 
 ## Home Page
 
-![Home Page](Screenshots/homepage.png)
+![Home Page](https://github.com/manasi2654/OnlineExaminationSystem/blob/main/Screenshots/homepage.png)
 
 
 Installation Guide
