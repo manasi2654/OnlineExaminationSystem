@@ -1,47 +1,43 @@
-````markdown
-# Online Examination System using Django Framework
+````markdown id="u5f5qc"
+# 🚀 Online Examination System using Django Framework
 
-The Online Examination System is a web-based application developed using the Django framework. This system helps automate the examination process by allowing administrators to manage exams, students, questions, and results efficiently. Students can log in, attend exams online, and view their results instantly.
+## 📌 Project Overview
+The Online Examination System is a web-based application developed using the Django framework. The system automates the examination process by allowing administrators to manage exams, students, questions, and results efficiently. Students can log in, attend exams online, and view results instantly.
 
----
-
-# Features
-
-## Admin Module
-- Admin Login and Dashboard
-- Manage Students and Teachers
-- Add, Update, and Delete Exams
-- Manage Subjects and Questions
-- View Student Results
-- Monitor Examination Activities
-
-## Student Module
-- Student Registration and Login
-- View Available Exams
-- Attend Online Exams
-- Automatic Result Generation
-- View Scores and Performance
-
-## Examination Features
-- Multiple Choice Questions (MCQ)
-- Timer-Based Examination
-- Instant Result Calculation
-- Secure Authentication System
+This project was developed to understand backend development, database management, REST APIs, and web application deployment using Django.
 
 ---
 
-# Technologies Used
+# 🎯 Objective
+
+- Develop a secure online examination platform
+- Implement student and admin authentication
+- Manage exams, questions, and results digitally
+- Create REST APIs using Django REST Framework
+- Automate result generation and exam management
+
+---
+
+# 🧰 Technologies Used
 
 - Python
 - Django Framework
+- Django REST Framework (DRF)
 - HTML5
 - CSS3
 - Bootstrap
 - SQLite Database
+- Git & GitHub
 
 ---
 
-# Project Structure
+# 🏗️ System Architecture
+
+Student/Admin → Django Web Application → SQLite Database → Result Generation
+
+---
+
+# 📂 Project Structure
 
 ```bash
 Online-Examination-System/
@@ -60,23 +56,61 @@ Online-Examination-System/
 
 ---
 
-# Screenshots
+# ✨ Features
+
+## 👨‍💼 Admin Module
+- Admin Login and Dashboard
+- Manage Students and Teachers
+- Add, Update, and Delete Exams
+- Manage Questions and Subjects
+- Monitor Student Performance
+- View Results
+
+---
+
+## 👨‍🎓 Student Module
+- Student Registration and Login
+- Attend Online Exams
+- View Available Exams
+- Instant Result Generation
+- Performance Tracking
+
+---
+
+## 📝 Examination Features
+- MCQ-Based Online Exams
+- Timer-Based Examination System
+- Automatic Score Calculation
+- Secure Authentication System
+- REST API Integration
+
+---
+
+# 🚀 Project Screenshots
 
 ## Home Page
 
-![Home Page](screenshots/homepage.png)
+![Home Page](Screenshots/homepage.png)
+
+---
 
 ## Admin Dashboard
 
 ![Admin Dashboard](screenshots/admin-dashboard.png)
 
+---
+
 ## Student Dashboard
 
 ![Student Dashboard](screenshots/student-dashboard.png)
 
-## Online Examination Page
+---
+
+## Examination Page
 
 ![Exam Page](screenshots/exam-page.png)
+
+---
 
 ## Result Page
 
@@ -84,22 +118,26 @@ Online-Examination-System/
 
 ---
 
-# Installation Guide
+# 🚀 Installation Steps
 
-## Step 1: Clone the Repository
+## 1. Clone Repository
 
 ```bash
 git clone https://github.com/manasi2654/OnlineExaminationSystem.git
 cd OnlineExaminationSystem
 ```
 
-## Step 2: Create Virtual Environment
+---
+
+## 2. Create Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-## Step 3: Activate Virtual Environment
+---
+
+## 3. Activate Virtual Environment
 
 ### Windows
 
@@ -113,44 +151,70 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-## Step 4: Install Required Packages
+---
+
+## 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Step 5: Make Database Migrations
+---
+
+## 5. Apply Database Migrations
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-## Step 6: Create Admin/Superuser
+---
+
+## 6. Create Superuser
 
 ```bash
 python manage.py createsuperuser
 ```
 
-## Step 7: Run the Application
+---
+
+## 7. Run Development Server
 
 ```bash
 python manage.py runserver
 ```
 
+Open browser and visit:
 
-
-# Contact Us Page Configuration
-
-Update email credentials in `settings.py`:
-
-```python
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'your-email@gmail.com'
-EMAIL_HOST_PASSWORD = 'your-password'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+```bash
+http://127.0.0.1:8000/
 ```
 
 ---
+
+# 🔑 Admin Login
+
+```bash
+http://127.0.0.1:8000/admin
+```
+
+---
+
+# 📡 REST API Integration
+
+The project includes REST APIs developed using Django REST Framework for:
+- Exam Management
+- Question Management
+- Student Result Handling
+
+---
+
+# 📈 Learning Outcomes
+
+- Learned Django backend development
+- Worked with Django REST Framework
+- Implemented authentication system
+- Managed database operations using SQLite
+- Gained hands-on experience with REST APIs
+- Improved understanding of full-stack web applications
 
